@@ -1,0 +1,34 @@
+header{
+	background: #BBBBBB;
+	/* 20px pra cima e pra baixo e 0 p direita e p esquerda*/
+	padding: 20px 0;
+
+}
+
+.caixa{
+	/* a posição do nav ficou absoluta em relação a página, então pra entrar na caixa*/ 
+	position: relative;
+	width: 940px;
+	margin: 0 auto;
+}
+
+nav{
+	/*permite colocar em qualquer lugar da página*/
+	position: absolute;
+	top: 110px;
+	right: 0;
+}
+
+nav li{
+	display: inline;
+	margin: 0 0 0 15px;
+}
+
+nav a{
+	text-transform: uppercase;
+	color: #000000;
+	font-weight: bold;
+	font-size: 22px;
+	/* tirar o sublinhado embaixo do texto */
+	text-decoration: none;
+}
