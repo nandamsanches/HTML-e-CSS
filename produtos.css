@@ -32,3 +32,80 @@ nav a{
 	/* tirar o sublinhado embaixo do texto */
 	text-decoration: none;
 }
+
+/*quando o mouse estiver por cima dos meus links de navegação*/
+nav a:hover{
+	color: #C78C19;
+	text-decoration: underline;
+}
+
+.produtos{
+	width: 940px;
+	margin: 0 auto;
+	padding: 50px 0; 
+
+}
+
+.produtos li {
+	/*ocupa só o tamanho do conteúdo deles e, por isso, um fica ao lado do outro*/
+	display: inline-block;
+	text-align: center;
+	width: 30%;
+	/*o inline block orienta pela parte de baixo, esse vertical align vai orientar pela parte de cima da linha */
+	vertical-align: top;
+	margin: 0 1.5%;
+	padding: 30px 20px;
+	/* com isso o padding fica dentro dos 30% de width q coloquei e não soma com o padding e fica uma coisa maior ainda*/
+	box-sizing: border-box;
+	/*
+	as 3 configurações abaixo são as que montam uma bor
+	border-color: #000000;
+	border-width: 2px;
+	border-style: solid;
+	*/
+	/* mas pode colocar tudo em apenas uma linha */
+	border: 2px solid #000000;
+	border-radius: 10px;
+}
+
+.produtos li:hover{
+	border-color: #C78C19;
+	/*se eu mudo o tamanho da fonte de algo aqui nada acontece, porque ela já é especificada */
+}
+
+/* o active é pra quando eu clico com o mouse */
+.produtos li:active{
+	border-color: #088C19;
+}
+
+/*quero que o h2, quando o mouse estiver por cima dos li dos produtos (aqui vai funcionar a mudança do tamanho da fonte*/
+.produtos li:hover h2{
+	font-size: 34px;
+}
+
+.produtos h2{
+	font-size: 30px;
+	font-weight: bold;
+}
+
+.produto-descricao{
+	font-size: 18px;
+}
+
+.produto-preco{
+	font-size: 22px;
+	font-weight: bold;
+	margin-top: 10px
+} 
+
+footer {
+	text-align: center;
+	background: url("bg.jpg");
+	padding: 40px 0;
+}
+
+.copyright{
+	color: #FFFFFF;
+	font-size: 13px;
+	margin-top: 20px;
+}
